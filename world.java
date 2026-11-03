@@ -1,7 +1,20 @@
+import java.util.Scanner;
 class mains
 {
     public static void main(String args[])
     {
-        System.out.println("Java is the most advanced language");
-    }
+    Scanner sc = new Scanner(System.in);
+
+      System.out.println("This code calculates the prime number");
+      int n = sc.nextInt();
+      int c = 0;
+      for(int i = 1; i <= n ; i++)
+      {
+        if( n % i == 0 )
+         c ++ ;
+      } 
+      if (c==2)
+      System.out.println("Prime Number");
+    sc.close();
+}
 }
